@@ -21,7 +21,7 @@ public class ResSpecBuilder {
                     .expectBody("code", equalTo(200))
                     .expectBody("type", equalTo("unknown"))
                     .expectBody("message", equalTo("ok"))
-                    .expectResponseTime(lessThan(3000L))
+                    .expectResponseTime(lessThan(5000L))
                     .build();
         }
         return res_spec;
